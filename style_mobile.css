@@ -4,6 +4,11 @@
     flex-direction: column-reverse;
   }
 
+  .banner_produk{
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
   #logo_desktop{
     display: none;
   }
@@ -12,7 +17,7 @@
     display: block;
     max-width: 60px;
     border: none;
-  }
+  } 
 
   #menu_toggle{
     display: flex;
@@ -66,7 +71,29 @@
     width: 100%;
   }
 
+  .banner_produk_left{
+    display: block;
+    width: 100%;
+  }
+
+  .banner_produk_text{
+    width: 90%;
+    margin: auto;
+  }
+
+  .banner_produk_text h1{
+    margin-top: 32px;
+  }
+
+  .banner_produk_img{
+    width: 100%;
+  }
+
   .triangle{
+    display: none;
+  }
+
+  .triangle_produk{
     display: none;
   }
 
@@ -110,5 +137,40 @@
 
   .fabout{
     width: 50%;
+  }
+
+  .produk_item{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .produk_item img{
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .produk_info{
+    width: 100%;
+  }
+
+  .toggle_produk:checked ~ .produk_detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .produk_detail_isi{
+    width: 100%;
+  }
+
+  .contact_penjual{
+    margin-top: 10px;
+    padding-top: 8px;
+    border-top: 1px solid black;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
