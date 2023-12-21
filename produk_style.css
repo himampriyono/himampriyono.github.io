@@ -1,0 +1,215 @@
+body{
+  background-color: black;
+  color: white;
+}
+
+.navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+#logo_desktop{
+  display: block;
+  max-width: 100px;
+  margin-top: 15px;
+  margin-left: 10%;
+  align-self: flex-start;
+}
+
+#logo_mobile{
+  display: none;
+}
+
+.nav{
+  margin-top: 20px;
+  margin-left: 30%;
+  position: absolute;
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  z-index: 5;
+  padding-right: 0px;
+}
+
+.nav a{
+  color: white;
+  font-weight: 500;
+}
+
+.nav a:hover{
+  text-decoration: none;
+  color: #fb0;
+}
+
+#menu_toggle{
+  display: none;
+}
+
+.menu{
+  display: none;
+}
+
+.triangle_produk {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 250px solid transparent;
+  border-bottom: 300px solid transparent;
+  border-left: 250px solid #000;
+  z-index: 3;
+}
+
+.banner_produk{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 500px;
+}
+
+.banner_produk_left{
+  display: flex;
+  width: 25%; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 4;
+}
+
+.banner_produk_text{
+  text-align: left;
+  margin-left: 20%;
+}
+
+.banner_produk_text h1{
+  color: orange;
+  font-weight: 700;
+  margin-bottom: 24px;
+  font-family: "Black Ops One";
+}
+
+.banner_produk_img{
+  position: relative;
+  width: 75%;
+  overflow: hidden;
+}
+
+.banner_produk_img img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.produk_page{
+  padding: auto;
+  color: white;
+  width: 90%;
+  margin: 48px auto auto auto;
+}
+
+.produk_page h3{
+  color: #b80;
+}
+
+.produk_page p{
+  text-align: justify-all;
+}
+
+.produk_grid{
+  border: 2px solid rgba(255, 255, 0, 0.85);
+  border-radius: 4px;
+  padding: 24px;
+  background-color: #333;
+  width: 90%;
+  margin: auto;
+
+}
+
+.produk_item{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  overflow: hidden;
+  justify-content: space-between;
+  border: 2px solid white;
+  padding: 12px;
+  border-radius: 12px;
+  background-color: #fff;
+  color: black;
+  margin: 12px;
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+.produk_item:hover{
+  box-shadow: 0 0 20px #ee5;
+}
+
+.produk_item img{
+  object-fit: cover;
+  width: 40%;
+  border-radius: 12px;
+}
+
+.produk_info{
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.produk_info h3{
+  color: black;
+}
+
+.produk_info h4{
+  color: #c50;
+}
+
+.produk_toggle{
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.produk_detail{
+  width: 95%;
+  display: none;
+  padding-top: 24px;
+  border-top: 1px solid black;
+  margin: 12px auto auto auto;
+}
+
+.toggle_produk{
+  display: none;
+}
+
+.toggle_produk:checked ~ .produk_detail {
+/*  display: block;*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.produk_toggle_label{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  font-size: 18px;
+  color: #c50;
+}
+
+.produk_detail_isi{
+  width: 70%;
+}
+
+.contact_penjual{
+  width: 20%;
+}
+
+.contact_penjual i{
+  font-size: 24px;
+}

@@ -1,0 +1,345 @@
+body{
+  background-color: black;
+  color: white;
+}
+
+.navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+#logo_desktop{
+  display: block;
+  max-width: 100px;
+  margin-top: 15px;
+  margin-left: 10%;
+  align-self: flex-start;
+}
+
+#logo_mobile{
+  display: none;
+}
+
+.nav{
+  margin-top: 20px;
+  margin-left: 30%;
+  position: absolute;
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  z-index: 5;
+  padding-right: 0px;
+}
+
+.nav a{
+  color: white;
+  font-weight: 500;
+}
+
+.nav a:hover{
+  text-decoration: none;
+  color: #fb0;
+}
+
+#menu_toggle{
+  display: none;
+}
+
+.menu{
+  display: none;
+}
+
+.banner{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.banner_left{
+  display: flex;
+  max-width: 35%; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banner_text{
+  text-align: left;
+  margin-left: 20%;
+}
+
+.banner_text h1{
+  color: orange;
+  font-weight: 700;
+  margin-bottom: 24px;
+  font-family: "Black Ops One";
+}
+
+.banner_img{
+  position: relative;
+  width: 65%;
+  overflow: hidden;
+}
+
+.triangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 500px solid transparent; /* Tinggi segitiga */
+  border-bottom: 0px solid transparent; /* Tinggi segitiga */
+  border-left: 200px solid #000; /* Warna segitiga (ganti dengan warna yang diinginkan) */
+/*  outline: 10px solid black;*/
+z-index: 3; /* Atur lapisan di atas gambar */
+}
+
+.btn_more button{
+  background-color: transparent;
+  border-color: #fb0;
+  border-radius: 16px;
+  padding: 2px 8px;
+  color: #fb0;
+}
+
+.btn_more:hover button{
+  background-color: #c70;
+  color: white;
+  border-color: #ff5;
+  text-decoration: none;
+}
+
+.banner_img img{
+  width: 100%;
+  max-height: 500px;
+  z-index: 1;
+  border-bottom: 10px solid #000;
+}
+
+.b_kesenian{
+  margin-top: 64px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+.b_kesenian_grid{
+  width: 100%;
+  display: grid;
+  gap: 4px;
+  grid-template-areas: "a a b" "c d d";
+}
+
+#a{
+  grid-area: a;
+}
+
+#b{
+  grid-area: b;
+}
+
+#c{
+  grid-area: c;
+}
+
+#d{
+  grid-area: d;
+}
+
+.b_kesenian_item{
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.b_kesenian_item img{
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.b_kesenian_text{
+  max-width: 50%;
+  margin-left: 5%;
+  text-align: justify;  
+}
+
+.b_kesenian_text h1, .salak h1, .produk h1, .map h1{
+  font-size: 32px;
+  font-family: "Roboto Slab";
+  color: yellow;
+  margin-bottom: 24px;
+}
+
+.salak{
+  margin-top: 64px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+.salak_text{
+  text-align: justify;
+  margin-right: 5%;
+  width: 45%;
+}
+
+.salak_grid{
+  display: grid;
+  grid-template-areas: "e e" "f g";
+  gap: 4px;
+  width: 40%;
+}
+
+#e{
+  grid-area: e;
+}
+
+#f{
+  grid-area: f;
+}
+
+#g{
+  grid-area: g;
+}
+
+.salak_item{
+  overflow: hidden;
+  border: 1px solid #ccf;
+  border-radius: 8px;
+  color: white;
+}
+
+.salak_item img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.produk{
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 96px;
+  padding-right: 96px;
+}
+
+.produk_grid{
+  width: 80%;
+  display: flex;
+  gap: 16px;
+  margin: auto auto 24px auto;
+}
+
+.produk_grid a{
+  text-align: center;
+}
+
+.produk_item{
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.produk_item img{
+  width: 100%;
+  height: 100%;
+/*  display: block;*/
+  object-fit: cover;
+}
+
+.produk_item p{
+  margin-top: 12px;
+  color: black;
+  text-align: center;
+/*  background-color: white;*/
+}
+
+.produk_text{
+  margin-left: 5%;
+  text-align: justify;  
+  width: 40%;
+}
+
+.map{
+  margin-top: 64px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+.map_text{
+  margin-left: 24px;
+  width: 30%;
+}
+
+.map_frame{
+  width: 60%;
+}
+
+.map_frame iframe{
+  border-radius: 24px;
+  width: 100%;
+  height: 450px;
+}
+
+.b_kesenian a:hover, .produk a:hover, .salak a:hover{
+  text-decoration: none;
+}
+
+.b_kesenian img:hover, .produk img:hover, .salak img:hover{
+  scale: 1.1;
+  transition: all 0.5s;
+}
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  margin-top: 48px;
+  padding: 24px;
+  border-top: 3px solid #fb0;
+  justify-content: space-between;
+  background-color: white;
+  color: black;
+}
+
+.flogo {
+  width: 25%;
+}
+
+.flogo img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.fabout{
+  text-align: left;
+  align-items: center;
+  width: 25%;
+  flex-direction: column;
+}
+
+.fabout a{
+  color: black;
+}
+
+.fab{
+  margin: 12px 12px 32px 12px;
+}
+
+/*======= PRODUK =======*/
+
+

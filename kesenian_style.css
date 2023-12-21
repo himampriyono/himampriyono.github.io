@@ -1,0 +1,246 @@
+body{
+  background-color: black;
+  color: white;
+}
+
+.navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+#logo_desktop{
+  display: block;
+  max-width: 100px;
+  margin-top: 15px;
+  margin-left: 10%;
+  align-self: flex-start;
+}
+
+#logo_mobile{
+  display: none;
+}
+
+.nav{
+  margin-top: 20px;
+  margin-left: 30%;
+  position: absolute;
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  z-index: 5;
+  padding-right: 0px;
+}
+
+.nav a{
+  color: white;
+  font-weight: 500;
+}
+
+.nav a:hover{
+  text-decoration: none;
+  color: #fb0;
+}
+
+#menu_toggle{
+  display: none;
+}
+
+.menu{
+  display: none;
+}
+
+.banner{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.banner_left{
+  display: flex;
+  max-width: 35%; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banner_text{
+  text-align: left;
+  margin-left: 20%;
+}
+
+.banner_text h1{
+  color: orange;
+  font-weight: 700;
+  margin-bottom: 24px;
+  font-family: "Black Ops One";
+}
+
+.banner_img{
+  position: relative;
+  width: 65%;
+  overflow: hidden;
+}
+
+.triangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 500px solid transparent; /* Tinggi segitiga */
+  border-bottom: 0px solid transparent; /* Tinggi segitiga */
+  border-left: 200px solid #000; /* Warna segitiga (ganti dengan warna yang diinginkan) */
+/*  outline: 10px solid black;*/
+z-index: 3; /* Atur lapisan di atas gambar */
+}
+
+.btn_more button{
+  background-color: transparent;
+  border-color: #fb0;
+  border-radius: 16px;
+  padding: 2px 8px;
+  color: #fb0;
+}
+
+.btn_more:hover button{
+  background-color: #c70;
+  color: white;
+  border-color: #ff5;
+  text-decoration: none;
+}
+
+.banner_img img{
+  width: 100%;
+  max-height: 500px;
+  z-index: 1;
+  border-bottom: 10px solid #000;
+}
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  margin-top: 48px;
+  padding: 24px;
+  border-top: 3px solid #fb0;
+  justify-content: space-between;
+  background-color: white;
+  color: black;
+}
+
+.flogo {
+  width: 25%;
+}
+
+.flogo img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.fabout{
+  text-align: left;
+  align-items: center;
+  width: 25%;
+  flex-direction: column;
+}
+
+.fabout a{
+  color: black;
+}
+
+.fab{
+  margin: 12px 12px 32px 12px;
+}
+
+.kesenian_page{
+  margin-top: 12px;
+  padding: auto;
+}
+
+.kesenian_page p{
+  text-align: justify-all;
+}
+
+.kesenian_page h3{
+  color: #b80;
+}
+
+.video{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+.video iframe{
+  height: 600px;
+}
+
+.galeri_kesenian{
+  background-color: rgba(255, 255, 250, 0.1);
+  padding: 24px;
+  border-radius: 8px;
+  border: 2px solid yellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.galeri_kesenian h3{
+  color: #ffb;
+  width: 100%;
+  text-align: center;
+}
+
+.galeri_kesenian_grid{
+  margin: 18px auto 12px auto;
+  overflow: hidden;
+  width: 95%;
+  display: grid;
+  gap: 12px;
+  border-top: 1px solid white;
+  padding-top: 24px;
+  grid-template-areas: "ti_1 ti_1 ti_3 ti_4" "ti_1 ti_1 ti_3 ti_4" "ti_5 ti_6 ti_6 ti_4" "ti_5 ti_7 ti_7 ti_2";
+}
+
+#ti_1{
+  grid-area: ti_1;
+  border-radius: 24px 0 0 0;
+}
+
+#ti_2{
+  grid-area: ti_2;
+  border-radius: 0 0 24px 0;
+}
+
+#ti_3{
+  grid-area: ti_3;
+}
+
+#ti_4{
+  grid-area: ti_4;
+  border-radius: 0 24px 0 0;
+}
+
+#ti_5{
+  grid-area: ti_5;
+  border-radius: 0 0 0 24px;
+}
+
+#ti_6{
+  grid-area: ti_6;
+}
+
+#ti_7{
+  grid-area: ti_7;
+}
+
+.galeri_kesenian_grid img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 1px solid white;
+}
