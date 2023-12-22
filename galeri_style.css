@@ -1,0 +1,163 @@
+body{
+  background-color: black;
+  color: white;
+}
+
+.navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+#logo_desktop{
+  display: block;
+  max-width: 100px;
+  margin-top: 15px;
+  margin-left: 10%;
+  align-self: flex-start;
+}
+
+#logo_mobile{
+  display: none;
+}
+
+.nav{
+  margin-top: 20px;
+  margin-left: 30%;
+  position: absolute;
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  z-index: 5;
+  padding-right: 0px;
+}
+
+.nav a{
+  color: white;
+  font-weight: 500;
+}
+
+.nav a:hover{
+  text-decoration: none;
+  color: #fb0;
+}
+
+#menu_toggle{
+  display: none;
+}
+
+.menu{
+  display: none;
+}
+
+.banner{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.banner_left{
+  display: flex;
+  max-width: 35%; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banner_text{
+  text-align: left;
+  margin-left: 20%;
+}
+
+.banner_text h1{
+  color: orange;
+  font-weight: 700;
+  margin-bottom: 24px;
+  font-family: "Black Ops One";
+}
+
+.banner_img{
+  position: relative;
+  width: 65%;
+  overflow: hidden;
+}
+
+.triangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 500px solid transparent; /* Tinggi segitiga */
+  border-bottom: 0px solid transparent; /* Tinggi segitiga */
+  border-left: 200px solid #000; /* Warna segitiga (ganti dengan warna yang diinginkan) */
+/*  outline: 10px solid black;*/
+z-index: 3; /* Atur lapisan di atas gambar */
+}
+
+.btn_more button{
+  background-color: transparent;
+  border-color: #fb0;
+  border-radius: 16px;
+  padding: 2px 8px;
+  color: #fb0;
+}
+
+.btn_more:hover button{
+  background-color: #c70;
+  color: white;
+  border-color: #ff5;
+  text-decoration: none;
+}
+
+.banner_img img{
+  width: 100%;
+  max-height: 500px;
+  z-index: 1;
+  border-bottom: 10px solid #000;
+}
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  margin-top: 48px;
+  padding: 24px;
+  border-top: 3px solid #fb0;
+  justify-content: space-between;
+  background-color: white;
+  color: black;
+}
+
+.flogo {
+  width: 25%;
+}
+
+.flogo img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.fabout{
+  text-align: left;
+  align-items: center;
+  width: 25%;
+  flex-direction: column;
+}
+
+.fabout a{
+  color: black;
+}
+
+.fab{
+  margin: 12px 12px 32px 12px;
+}
+
+.galeri_item{
+  width: 90%;
+  margin: auto;
+}
+
+.galeri_item h3{
+  color: #fb5;
+}
