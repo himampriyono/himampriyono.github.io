@@ -163,3 +163,56 @@ z-index: 3; /* Atur lapisan di atas gambar */
 .pertanian_page h3{
   color: #b80;
 }
+
+.ciri_salak_isi{
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+}
+
+.ciri_salak_isi img{
+  object-fit: cover;
+  width: 40%;
+  border-radius: 12px;
+}
+
+.ciri_salak_isi ul{
+  width: 50%;
+  margin: auto;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border: 1px dashed #ffa;
+}
+
+.manfaat_salak{
+  width: 90%;
+  margin: auto;
+  text-align: justify;
+  border-top: 1px solid #fb0;
+  border-bottom: 1px solid #fb0;
+  padding-top: 12px;
+  padding-bottom: 8px;
+}
+
+.manfaat_salak_isi{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 24px;
+  padding: 12px;
+}
+
+.manfaat_detail{
+  border: 1px solid #ffb;
+  padding: 12px;
+  background-color: rgba(255, 255, 50, 0.05);
+  border-radius: 4px;
+}
+
+.manfaat_detail:hover{
+  background-color: rgba(255, 255, 50, 0.2);
+}
+
+.manfaat_detail h5{
+  color: #fb5;
+}

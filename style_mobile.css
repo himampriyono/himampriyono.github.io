@@ -173,4 +173,33 @@
     flex-direction: row;
     justify-content: space-between;
   }
+
+  .pertanian_page .pendahuluan{
+    margin: 4px;
+    text-align: justify;
+  }
+
+  .ciri_salak{
+    border-top: 1px solid #fb0;
+    padding-top: 12px;
+  }
+
+  .ciri_salak_isi{
+    flex-direction: column;
+  }
+
+  .ciri_salak_isi img{
+    width: 90%;
+    margin: auto;
+  }
+
+  .ciri_salak_isi ul{
+    width: 90%;
+    margin: 12px auto;
+  }
+
+  .manfaat_salak_isi{
+    display: flex;
+    flex-direction: column;
+  }
 }
