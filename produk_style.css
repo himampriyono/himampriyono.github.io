@@ -190,7 +190,6 @@ body{
 }
 
 .toggle_produk:checked ~ .produk_detail {
-/*  display: block;*/
   display: flex;
   flex-direction: row;
   justify-content: space-between;

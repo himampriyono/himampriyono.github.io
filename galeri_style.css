@@ -161,3 +161,7 @@ z-index: 3; /* Atur lapisan di atas gambar */
 .galeri_item h3{
   color: #fb5;
 }
+
+.galeri_item p{
+  text-align: justify;
+}
